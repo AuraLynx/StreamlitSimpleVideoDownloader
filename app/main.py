@@ -35,7 +35,7 @@ def init_app() -> None:
         pass
 
 def main():
-    init_app()
+    # init_app()
     url_input = st.text_input(
         'URLを1つ入力してね',
         value=None,
