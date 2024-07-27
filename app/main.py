@@ -30,6 +30,7 @@ def init_app() -> None:
     if len(video_list) > 0:
         for i_file in video_list:
             os.remove(i_file)
+            print(f'{i_file} deleted...')
     else:
         pass
 
