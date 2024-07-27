@@ -35,7 +35,10 @@ def init_app() -> None:
 
 def main():
     init_app()
-    url_input = st.text_input('URLを1つ入力してね')
+    url_input = st.text_input(
+        'URLを1つ入力してね',
+        value=None,
+    )
 
     if st.button('Start Download'):
         result_placeholder = st.container()
